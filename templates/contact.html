@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %} Home{% endblock title %} 
+{% block body  %}
+<div class="container">
+    <h1 class="my-3 text-center">Contact Us</h1>
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+        
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+           
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="phone" name="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Enter phone number">
+           
+        </div>
+        <div class="form-group">
+            <label for="exampleInputDesc1">Description</label>
+            <textarea name="desc" class="form-control" id="exampleInputDesc1" aria-describedby="descHelp" placeholder="Enter description"></textarea>
+        
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+{% endblock body %}

@@ -1,0 +1,12 @@
+{
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.columnSelection": true,
+    "editor.defaultColorDecorators": true,
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "reactSnippets.settings.prettierEnabled": true,
+    "[django-html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
